@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 overflow-hidden bg-neon-bg text-white font-inter;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 10px theme('colors.neon.blue'), 0 0 20px theme('colors.neon.pink');
+}
+
+.box-glow {
+  box-shadow: 0 0 15px theme('colors.neon.purple'), inset 0 0 10px theme('colors.neon.blue');
+}
