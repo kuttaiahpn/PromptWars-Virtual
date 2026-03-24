@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export const getPortalMessage = async (level: number, timeLeftSeconds: number): Promise<string> => {

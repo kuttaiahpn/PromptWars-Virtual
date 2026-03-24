@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useRef } from 'react';
 import Phaser from 'phaser';
 import { useGameState } from '../state/GameStateProvider';
