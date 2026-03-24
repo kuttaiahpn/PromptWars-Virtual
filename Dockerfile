@@ -29,7 +29,7 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Cloud Run defines the port dynamically via the $PORT environment variable.
 # Nginx >= 1.19 automatically processes files in /etc/nginx/templates/ via envsubst.
 # This template explicitly instructs Nginx to listen on $PORT and routes traffic to our single-page React app.
-RUN echo 'server { \
+RUN mkdir -p /etc/nginx/templates && echo 'server { \
     listen ${PORT}; \
     location / { \
         root /usr/share/nginx/html; \
